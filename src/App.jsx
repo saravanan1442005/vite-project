@@ -7,7 +7,7 @@ function App() {
   alert("My name is saravanan");
   
   const name={
-    name:" saravanan",
+    name:"saravanan",
     age:20,
   };
   console.log("age="+name.age);

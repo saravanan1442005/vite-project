@@ -4,20 +4,19 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  alert("My name is saravanan");
+  
   const name={
-    name:"saravanan",
-  }
-  console.alert("My name is saravanan")
-  console.log("age=20")
-
-
-
+    name:" saravanan",
+    age:20,
+  };
+  console.log("age="+name.age);
   return (
-    <>
-    <h1>{name}</h1>
-    <h1>SARAVANAN S</h1>
-      </>
-  )
+    
+    <div className='screen'>
+    <h1>name:{name.name}</h1>
+     </div> 
+  );
 }
 
 export default App

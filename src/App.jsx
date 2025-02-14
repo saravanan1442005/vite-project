@@ -4,10 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const name={
+    name:"saravanan",
+  }
+  console.alert("My name is saravanan")
+  console.log("age=20")
+
+
 
   return (
     <>
+    <h1>{name}</h1>
     <h1>SARAVANAN S</h1>
       </>
   )

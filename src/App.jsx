@@ -5,7 +5,13 @@ import './App.css'
 
 function App() {
   alert("My name is saravanan");
-  
+  function yaro() {
+    console.log("hiiiiiiiiii");
+  }
+
+  const bhaii =()=>{
+  console.log("hellloooooooo");
+  }
   const name={
     name:"saravanan",
     age:20,
@@ -15,6 +21,9 @@ function App() {
     
     <div className='screen'>
     <h1>name:{name.name}</h1>
+    <button onClick={yaro}>presss me</button>
+    <button onClick={()=>console.log("....CONGRAJULATION .....")}> dont click</button>
+    <button onClick={bhaii}> touch </button>  
      </div> 
   );
 }

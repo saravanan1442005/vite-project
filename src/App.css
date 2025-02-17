@@ -1,19 +1,14 @@
-h1 {
-  font-family: cursive;
-  color: rgb(255, 255, 255); 
-  text-align: center; 
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  font-weight: 400; 
-  font-size: 100px;
-  text-shadow: black 2px 2px 2px;
+* {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  background-color: rgb(51, 102, 83);
 }
-.screen{ 
-background-image: url("https://static.vecteezy.com/system/resources/thumbnails/030/663/716/small_2x/calming-anime-background-high-quality-free-photo.jpg");
-background-size: cover;
-background-position: center;
-height: 100vh;
+#button{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  size: 5cm;
+  padding: 10px;
 }
 

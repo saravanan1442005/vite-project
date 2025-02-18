@@ -1,34 +1,29 @@
 import React from 'react';
 import './App.css'
 import Comp from './Comp'
-function App() {
- 
-  const name={
-    name:"saravanan",
-    age:20,
-  };
+import { useState } from 'react';
 
 
-  console.log("age="+name.age);
+  const BackgroundChanger = () => {
+    const [bgColor, setBgColor] = useState("#ffffff");
+  
+    const changeColor = (color) => {
+      setBgColor(color);
+    };
+  
 
   
   return (
     
-    <div>  
-      <h1>name:{name.name}</h1>
-      <div id='button'>
-        <button onClick={()=>alert("click is clicked")}>click</button>
-        <button onDoubleClick={()=>alert("2click is clicked")}>2clicked</button>
-      </div>
-       
-       
-      <div id='container'>
-        <Comp  name="saravanan" Age="20" FriendName="vicky" FAge="20"/>
-      </div>
-    
-   
-     </div> 
+<div style={{ backgroundColor: bgColor, height: "100vh", padding: "20px" }}>
+      <h2>Change Background Color</h2>
+      <button onClick={() => changeColor("black")}>Black</button>
+      <button onClick={() => changeColor("white")}>white</button>
+      <button onClick={() => changeColor("grey")}>Grey</button>
+      <button onClick={() => changeColor("black")}>Reset</button>
+    </div>
+ 
   );
 }
 
-export default App
+export default BackgroundChanger;

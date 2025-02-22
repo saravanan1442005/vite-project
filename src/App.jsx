@@ -1,27 +1,30 @@
 import React from 'react';
-import './App.css'
-import Comp from './Comp'
+import './App.css';
 import { useState } from 'react';
 
 
-  const BackgroundChanger = () => {
-    const [bgColor, setBgColor] = useState("#ffffff");
-  
-    const changeColor = (color) => {
-      setBgColor(color);
-    };
-  
+function App() {
 
-  
+  const [name, setName] = useState('');
+  const [mobileNo, setMobileNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [pass, setPass] = useState('');
+ 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Details are updated successfully.`);
+  }
+
   return (
-    
-<div style={{ backgroundColor: bgColor, height: "100vh", padding: "20px" }}>
-      <h2>Change Background Color</h2>
-      <button onClick={() => changeColor("black")}>Black</button>
-      <button onClick={() => changeColor("white")}>white</button>
-      <button onClick={() => changeColor("grey")}>Grey</button>
-      <button onClick={() => changeColor("black")}>Reset</button>
-    </div>
+  <>
+    <form onSubmit={handleSubmit} >
+      <input type="text" id="name" placeholder='Enter your name' required value={name} onChange={(e)=>setName(e.target.value)}/>
+      <input type="number" name="" id="Mobile" placeholder='Enter you Mobile Number' required value={mobileNo} onChange={(e)=>setMobileNumber(e.target.value)}/>
+      <input type="email" name="" id="email" placeholder='Enter you email' required value={email} onChange={(e)=>setEmail(e.target.value)}/>
+      <input type="password" name="" id="pass" placeholder='Enter your password' required value={pass} onChange={(e)=>setPass(e.target.value)}/>
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+  </>
  
   );
 }

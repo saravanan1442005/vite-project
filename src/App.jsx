@@ -29,4 +29,4 @@ function App() {
   );
 }
 
-export default BackgroundChanger;
+export default App;

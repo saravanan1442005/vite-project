@@ -16,7 +16,7 @@ function App() {
   }
 
   return (
-  <div className="body">
+  <>
     <form onSubmit={handleSubmit} >
       <input type="text" id="name" placeholder='Enter your name' required value={name} onChange={(e)=>setName(e.target.value)}/>
       <input type="number" name="" id="Mobile" placeholder='Enter you Mobile Number' required value={mobileNo} onChange={(e)=>setMobileNumber(e.target.value)}/>
@@ -24,7 +24,7 @@ function App() {
       <input type="password" name="" id="pass" placeholder='Enter your password' required value={pass} onChange={(e)=>setPass(e.target.value)}/>
       <button type="submit" value="Submit">Submit</button>
     </form>
-  <div/>
+  </>
  
   );
 }
